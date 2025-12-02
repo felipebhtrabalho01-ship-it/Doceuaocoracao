@@ -276,9 +276,9 @@
 
         <!-- 6. Componente ImpactPhrase (Frase de Impacto) -->
         <section class="px-6 py-16 bg-[#4A2A5A] shadow-inner shadow-black/50">
-            <p class="text-2xl md:text-3xl text-white text-center font-bold italic leading-relaxed">
-                Relacionamentos que começam no coração de Deus são os únicos que verdadeiramente florescem na terra.
-            </p>
+           <p id="marco-cta-inicio" class="text-2xl md:text-3xl text-white text-center font-bold italic leading-relaxed">
+    Relacionamentos que começam no coração de Deus são os únicos que verdadeiramente florescem na terra.
+</p>
         </section>
 
         <!-- 7. Componente Testimonials (Depoimentos) -->
@@ -390,13 +390,10 @@
                     </div>
                 </div>
                 
-                <button onclick="handleCTAClick()" class="w-full bg-[#F472B6] hover:bg-pink-600 text-white font-extrabold text-xl py-5 px-8 rounded-full shadow-2xl shadow-[#F472B6]/60 transition-all duration-300 transform hover:scale-[1.03] flex items-center justify-center space-x-2 animate-pulse">
-                    <!-- Ícone: ArrowRight -->
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-6 h-6"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
-                    <span>Quero Garantir Minha Vaga (R$ 29,90)</span>
-                </button>
-                <p class="text-center text-xs text-gray-300 mt-4">Clique no botão para ir ao checkout 100% seguro.</p>
-            </div>
+              <a href="https://doceuaocoracao.systeme.io/ac52ed70" class="w-full bg-[#F472B6] hover:bg-pink-600 text-white font-extrabold text-xl py-5 px-8 rounded-full shadow-2xl shadow-[#F472B6]/60 transition-all duration-300 transform hover:scale-[1.03] flex items-center justify-center space-x-2 animate-pulse">
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-6 h-6"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+    <span>Quero Garantir Minha Vaga (R$ 29,90)</span>
+</a>
         </section>
 
         <!-- 9. Componente Guarantee (Garantia) -->
@@ -433,15 +430,51 @@
     </div>
 
     <!-- CTA Fixo (Sticky) para Mobile - Visível apenas após rolar a tela -->
-    <div
-        id="sticky-cta"
-        class="fixed bottom-0 left-0 right-0 p-4 bg-slate-900 border-t border-pink-500 shadow-3xl z-50 transition-transform duration-300 md:hidden translate-y-full"
-    >
-        <button onclick="handleCTAClick()" class="w-full bg-[#F472B6] hover:bg-pink-600 text-white font-extrabold text-xl py-5 px-8 rounded-full shadow-2xl shadow-[#F472B6]/60 transition-all duration-300 transform hover:scale-[1.03] flex items-center justify-center space-x-2 animate-pulse">
-            <!-- Ícone: ArrowRight -->
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-6 h-6"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
-            <span>Quero a Oferta de R$ 29,90 AGORA!</span>
-        </button>
-    </div>
+    
+    <div id="sticky-cta-nova" style="
+    display: none; 
+    position: fixed; 
+    bottom: 0; 
+    left: 0; 
+    width: 100%; 
+    z-index: 9999;
+    box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.2); 
+">
+    <a href="https://doceuaocoracao.systeme.io/ac52ed70" style="
+        display: block; 
+        padding: 15px; 
+        background-color: #ff3366; 
+        color: white; 
+        text-align: center; 
+        text-decoration: none; 
+        font-weight: bold; 
+        font-size: 20px;
+        font-family: Arial, sans-serif;
+    ">
+        Quero a Oferta de R$ 29,90 AGORA!
+    </a>
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+    var marcoElemento = $('#marco-cta-inicio');
+    var botaoSticky = $('#sticky-cta-nova');
+
+    $(window).scroll(function() {
+        if (marcoElemento.length) {
+            var posicaoMarco = marcoElemento.offset().top - 150; 
+            var scrollAtual = $(window).scrollTop() + $(window).height();
+
+            if (scrollAtual > posicaoMarco) {
+                botaoSticky.fadeIn(300);
+            } else {
+                botaoSticky.fadeOut(300);
+            }
+        }
+    });
+});
+</script>
 </body>
+
 </html>
