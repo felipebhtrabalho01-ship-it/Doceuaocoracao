@@ -1,488 +1,88 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Do Céu ao Coração - 7 Passos para Relacionamentos</title><!-- Meta Pixel Code -->
-<script>
-!function(f,b,e,v,n,t,s)
-{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-n.queue=[];t=b.createElement(e);t.async=!0;
-t.src=v;s=b.getElementsByTagName(e)[0];
-s.parentNode.insertBefore(t,s)}(window, document,'script',
-'https://connect.facebook.net/en_US/fbevents.js');
-fbq('init', '739975092300712');
-fbq('track', 'PageView');
-</script>
-<noscript><img height="1" width="1" style="display:none"
-src="https://www.facebook.com/tr?id=739975092300712&ev=PageView&noscript=1"
-/></noscript>
-<!-- End Meta Pixel Code -->
-    <!-- Carrega o Tailwind CSS via CDN para estilização -->
-    <script src="https://cdn.tailwindcss.com"></script>
-    <!-- Configuração de cor do Tailwind (para usar as cores customizadas) -->
+    <title>Do Céu ao Coração</title>
+    
     <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    colors: {
-                        'slate-900': '#0F172A',
-                        'pink-500': '#EC4899',
-                        'pink-400': '#F472B6',
-                    },
-                    fontFamily: {
-                        sans: ['Inter', 'sans-serif'],
-                    }
-                }
-            }
-        }
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window, document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '739975092300712');
+    fbq('track', 'PageView');
     </script>
+    <noscript>
+        <img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=739975092300712&ev=PageView&noscript=1"/>
+    </noscript>
     <style>
-        /* Define a fonte Inter como fallback */
-        body {
-            font-family: 'Inter', sans-serif;
-            background-color: #0F172A;
-        }
-        /* Define a animação para o botão */
-        @keyframes pulse {
-            0%, 100% { transform: scale(1.0); }
-            50% { transform: scale(1.05); }
-        }
-        .animate-pulse {
-            animation: pulse 1.5s infinite;
-        }
+        body { font-family: sans-serif; line-height: 1.6; color: #333; margin: 0; padding: 0; text-align: center; }
+        .container { max-width: 800px; margin: auto; padding: 20px; }
+        .btn { display: inline-block; background: #28a745; color: white; padding: 15px 30px; text-decoration: none; font-weight: bold; border-radius: 5px; margin: 20px 0; }
+        .promo { color: #d9534f; font-weight: bold; }
+        footer { margin-top: 50px; font-size: 0.8em; color: #777; }
+        .floating-bar { position: fixed; bottom: 0; left: 0; width: 100%; background: #fff; padding: 10px; box-shadow: 0 -2px 10px rgba(0,0,0,0.1); z-index: 999; }
     </style>
 </head>
-<body class="bg-slate-900">
-    <!-- Variáveis e Funções de Controle (Puro JavaScript) -->
-    <script>
-        const PAYMENT_URL = 'https://pay.kirvano.com';
+<body>
 
-        // 1. Ação para ir para o Checkout
-        function handleCTAClick() {
-            window.open(PAYMENT_URL, '_blank');
-        }
+<div class="container">
+    <h1>Do Céu ao Coração</h1>
+    <p><strong>7 passos infalíveis para edificar um relacionamento cristão sólido e cheio de propósito.</strong></p>
+    <p>Chega de se ferir por falta de direção: o erro não é amar — é escolher sem princípios. Este guia mostra o caminho bíblico para restaurar sua vida emocional e espiritual.</p>
 
-        // 2. Ação para rolar a tela até a Oferta (usada nos CTAs intermediários)
-        function handleScrollToOffer() {
-            const offerSection = document.getElementById('offer-section');
-            if (offerSection) {
-                offerSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
-            }
-        }
+    <h2>Você Está Cansada de Repetir a Mesma Dor?</h2>
+    <p>Se você já se machucou escolhendo pessoas erradas, já orou pedindo um relacionamento abençoado, mas continua vivendo ciclos de dor e frustração, este guia é a resposta da sua oração.</p>
+    
+    <a href="https://pay.cakto.com.br/uhf8ue2_782055" class="btn">Transforme Seu Relacionamento Agora!</a>
 
-        // 3. Lógica para mostrar/esconder o CTA fixo no mobile
-        document.addEventListener('DOMContentLoaded', () => {
-            const stickyCta = document.getElementById('sticky-cta');
-            if (!stickyCta) return;
+    <hr>
 
-            const toggleVisibility = () => {
-                if (window.scrollY > 800) {
-                    stickyCta.classList.remove('translate-y-full');
-                    stickyCta.classList.add('translate-y-0');
-                } else {
-                    stickyCta.classList.add('translate-y-full');
-                    stickyCta.classList.remove('translate-y-0');
-                }
-            };
-            window.addEventListener('scroll', toggleVisibility);
-        });
-    </script>
+    <h3>Isto é Para Você se Você...</h3>
+    <ul style="text-align: left; display: inline-block;">
+        <li>Já se envolveu com pessoas que te afastavam de Deus.</li>
+        <li>Vive repetindo ciclos emocionais de desilusão.</li>
+        <li>Sente falta de clareza e sabedoria espiritual.</li>
+    </ul>
 
-    <!-- Container Centralizado e Limitado para Mobile e Desktop -->
-    <div class="max-w-lg mx-auto bg-[#1A1E31] shadow-2xl shadow-black/50 text-gray-100 min-h-screen">
-        
-        <!-- 1. Componente Hero (Cabeçalho de Alto Impacto) -->
-        <section class="px-6 pt-16 pb-16 text-center bg-gradient-to-br from-slate-900 to-[#1A1E31] border-b-4 border-pink-500">
-            <div class="mb-8">
-                <!-- Ícone: Heart -->
-                <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-16 h-16 mx-auto text-pink-500 mb-6 drop-shadow-lg"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/></svg>
-            </div>
-            <h1 class="text-4xl md:text-5xl font-extrabold text-white leading-tight mb-4 tracking-tight">
-                Do Céu ao Coração
-            </h1>
-            <h2 class="text-2xl md:text-3xl font-light text-pink-300 leading-snug mb-8">
-                7 passos infalíveis para edificar um relacionamento cristão sólido e cheio de propósito.
-            </h2>
-            <p class="text-lg text-gray-300 leading-relaxed mb-10 italic font-medium">
-                Chega de se ferir por falta de direção: o erro não é amar — é escolher sem princípios. Este guia mostra o caminho bíblico para restaurar sua vida emocional e espiritual.
-            </p>
-        </section>
+    <blockquote>"O coração se perde quando não há princípios — mas floresce quando guiado pela Palavra."</blockquote>
 
-        <!-- 2. Componente Transformation (A Dor e a Promessa) -->
-        <section class="px-6 py-16 bg-[#1A1E31] border-b border-gray-800">
-            <div class="space-y-8 text-center">
-                <h3 class="text-3xl font-bold text-pink-400 leading-snug">
-                    Você Está Cansada de Repetir a Mesma Dor?
-                </h3>
-                <p class="text-xl text-gray-200 leading-relaxed">
-                    Se você já se machucou escolhendo pessoas erradas, já orou pedindo um relacionamento abençoado, mas continua vivendo ciclos de dor e frustração, este guia é a resposta da sua oração.
-                </p>
-                <p class="text-xl text-gray-200 leading-relaxed font-semibold">
-                    Com estes 7 passos claros, você vai alinhar suas escolhas à Palavra, colocar Deus no centro e finalmente construir algo sólido, maduro e verdadeiramente abençoado.
-                </p>
-            </div>
-            <div class='mt-12'>
-                <button onclick="handleScrollToOffer()" class="w-full bg-[#F472B6] hover:bg-pink-600 text-white font-extrabold text-xl py-5 px-8 rounded-full shadow-2xl shadow-[#F472B6]/60 transition-all duration-300 transform hover:scale-[1.03] flex items-center justify-center space-x-2 animate-pulse">
-                    <!-- Ícone: ArrowRight -->
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-6 h-6"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
-                    <span>Transforme Seu Relacionamento Agora!</span>
-                </button>
-            </div>
-        </section>
+    <a href="https://pay.cakto.com.br/uhf8ue2_782055" class="btn">Receber o Guia Completo Agora</a>
 
-        <!-- 3. Componente Identification (Quebra de Objeções/Identificação) -->
-        <section class="px-6 py-16 bg-slate-900">
-            <h3 class="text-3xl font-extrabold text-pink-400 text-center mb-10 leading-snug">
-                Isto é Para Você se Você...
-            </h3>
-            <div class="space-y-5 mb-12">
-                <!-- Lista de Itens -->
-                <div class="flex items-start space-x-3 p-3 bg-[#1E293B] rounded-xl shadow-lg border-l-4 border-pink-500">
-                    <!-- Ícone: CheckCircle -->
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-6 h-6 text-green-400 flex-shrink-0 mt-1"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><path d="m9 11 3 3L22 4"/></svg>
-                    <p class="text-gray-200 text-lg leading-relaxed">Já se envolveu com pessoas que, no fundo, te afastavam de Deus.</p>
-                </div>
-                <div class="flex items-start space-x-3 p-3 bg-[#1E293B] rounded-xl shadow-lg border-l-4 border-pink-500">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-6 h-6 text-green-400 flex-shrink-0 mt-1"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><path d="m9 11 3 3L22 4"/></svg>
-                    <p class="text-gray-200 text-lg leading-relaxed">Vive repetindo ciclos emocionais que sempre terminam em desilusão.</p>
-                </div>
-                <div class="flex items-start space-x-3 p-3 bg-[#1E293B] rounded-xl shadow-lg border-l-4 border-pink-500">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-6 h-6 text-green-400 flex-shrink-0 mt-1"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><path d="m9 11 3 3L22 4"/></svg>
-                    <p class="text-gray-200 text-lg leading-relaxed">Sente que suas escolhas são contrárias à sua fé, mesmo orando por direção.</p>
-                </div>
-                <div class="flex items-start space-x-3 p-3 bg-[#1E293B] rounded-xl shadow-lg border-l-4 border-pink-500">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-6 h-6 text-green-400 flex-shrink-0 mt-1"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><path d="m9 11 3 3L22 4"/></svg>
-                    <p class="text-gray-200 text-lg leading-relaxed">Não sabe identificar alguém verdadeiramente preparado para um relacionamento cristão e maduro.</p>
-                </div>
-                <div class="flex items-start space-x-3 p-3 bg-[#1E293B] rounded-xl shadow-lg border-l-4 border-pink-500">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-6 h-6 text-green-400 flex-shrink-0 mt-1"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><path d="m9 11 3 3L22 4"/></svg>
-                    <p class="text-gray-200 text-lg leading-relaxed">Sente falta de clareza e sabedoria espiritual para decidir com segurança.</p>
-                </div>
-                <div class="flex items-start space-x-3 p-3 bg-[#1E293B] rounded-xl shadow-lg border-l-4 border-pink-500">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-6 h-6 text-green-400 flex-shrink-0 mt-1"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><path d="m9 11 3 3L22 4"/></svg>
-                    <p class="text-gray-200 text-lg leading-relaxed">Está cansada de expectativas frustradas e relacionamentos sem um propósito divino.</p>
-                </div>
-            </div>
-            <div class="bg-[#4A2A5A] p-6 rounded-2xl shadow-xl border-2 border-indigo-400">
-                <p class="text-xl text-white text-center font-bold italic leading-relaxed">
-                    "O coração se perde quando não há princípios — mas floresce quando guiado pela Palavra."
-                </p>
-            </div>
-        </section>
+    <hr>
 
-        <!-- 4. Componente ProductPresentation (O Que Você Recebe) -->
-        <section class="px-6 py-16 bg-[#1A1E31]">
-            <h3 class="text-3xl font-extrabold text-pink-400 text-center mb-6 leading-snug">
-                O Guia Que Transforma:
-            </h3>
-            <p class="text-xl text-gray-300 text-center mb-12 leading-relaxed italic">
-                "Um material completo que une sabedoria espiritual e prática para construir o seu futuro abençoado."
-            </p>
-            
-            <div class="space-y-8 mb-12">
-                <!-- Pilares -->
-                <div class="bg-slate-900 p-6 rounded-xl shadow-xl transition-transform duration-300 hover:scale-[1.02] border-t-4 border-pink-400">
-                    <div class="flex items-start space-x-4">
-                        <!-- Ícone: BookOpen -->
-                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-8 h-8 text-pink-400 flex-shrink-0 mt-1"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>
-                        <div>
-                            <h5 class="text-2xl font-bold text-white mb-2">Princípios 100% Bíblicos</h5>
-                            <p class="text-gray-300 leading-relaxed">Todo o material é fundamentado nas Escrituras, garantindo a solidez e a direção de Deus.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="bg-slate-900 p-6 rounded-xl shadow-xl transition-transform duration-300 hover:scale-[1.02] border-t-4 border-pink-400">
-                    <div class="flex items-start space-x-4">
-                        <!-- Ícone: CheckCircle -->
-                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-8 h-8 text-pink-400 flex-shrink-0 mt-1"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><path d="m9 11 3 3L22 4"/></svg>
-                        <div>
-                            <h5 class="text-2xl font-bold text-white mb-2">Exercícios Práticos e Reflexivos</h5>
-                            <p class="text-gray-300 leading-relaxed">Não é só teoria! Aplicação direta para você identificar erros e mudar o seu padrão de escolha hoje.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="bg-slate-900 p-6 rounded-xl shadow-xl transition-transform duration-300 hover:scale-[1.02] border-t-4 border-pink-400">
-                    <div class="flex items-start space-x-4">
-                        <!-- Ícone: Star -->
-                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-8 h-8 text-pink-400 flex-shrink-0 mt-1"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
-                        <div>
-                            <h5 class="text-2xl font-bold text-white mb-2">Sabedoria para Discernimento</h5>
-                            <p class="text-gray-300 leading-relaxed">Desenvolva a capacidade de identificar um parceiro com o caráter de Cristo, evitando perdas futuras.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="bg-slate-900 p-6 rounded-xl shadow-xl transition-transform duration-300 hover:scale-[1.02] border-t-4 border-pink-400">
-                    <div class="flex items-start space-x-4">
-                        <!-- Ícone: Heart -->
-                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-8 h-8 text-pink-400 flex-shrink-0 mt-1"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/></svg>
-                        <div>
-                            <h5 class="text-2xl font-bold text-white mb-2">Crescimento Integral</h5>
-                            <p class="text-gray-300 leading-relaxed">Invista no seu crescimento emocional e espiritual, preparando-se para o propósito de Deus na sua vida amorosa.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <button onclick="handleScrollToOffer()" class="w-full bg-[#F472B6] hover:bg-pink-600 text-white font-extrabold text-xl py-5 px-8 rounded-full shadow-2xl shadow-[#F472B6]/60 transition-all duration-300 transform hover:scale-[1.03] flex items-center justify-center space-x-2 animate-pulse">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-6 h-6"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
-                <span>Receber o Guia Completo Agora</span>
-            </button>
-        </section>
+    <h2>O Caminho da Transformação</h2>
+    <p>1. Ore por Orientação Divina</p>
+    <p>2. Estabeleça Princípios Bíblicos</p>
+    <p>3. Compare as Qualidades do Cônjuge</p>
+    <p>4. Busque Conselho de Líderes Espirituais</p>
+    <p>5. Orientação Bíblica para o Papel de Cada Um</p>
+    <p>6. Cultive uma Comunicação Honesta</p>
+    <p>7. Mantenha a Pureza no Relacionamento</p>
 
-        <!-- 5. Componente SevenSteps (Conteúdo Detalhado) -->
-        <section class="px-6 py-16 bg-slate-900">
-            <h3 class="text-4xl font-extrabold text-pink-400 text-center mb-12 leading-snug">
-                O Caminho da Transformação
-            </h3>
-            <div class="space-y-6">
-                <!-- Passos -->
-                <div class="flex items-start space-x-4">
-                    <div class="bg-pink-500 text-white font-bold text-xl w-10 h-10 rounded-full flex items-center justify-center flex-shrink-0 shadow-lg shadow-pink-500/40 mt-1">1</div>
-                    <div class="bg-[#1E293B] p-5 rounded-xl flex-grow shadow-md">
-                        <h4 class="text-xl font-bold text-white mb-2 leading-snug">Ore por Orientação Divina</h4>
-                        <p class="text-gray-300 leading-relaxed">Aprenda a orar de forma prática e permita que Deus direcione seus passos, evitando decisões na emoção.</p>
-                    </div>
-                </div>
-                <div class="flex items-start space-x-4">
-                    <div class="bg-pink-500 text-white font-bold text-xl w-10 h-10 rounded-full flex items-center justify-center flex-shrink-0 shadow-lg shadow-pink-500/40 mt-1">2</div>
-                    <div class="bg-[#1E293B] p-5 rounded-xl flex-grow shadow-md">
-                        <h4 class="text-xl font-bold text-white mb-2 leading-snug">Estabeleça Princípios Bíblicos</h4>
-                        <p class="text-gray-300 leading-relaxed">Descubra os princípios inegociáveis estabelecidos por Deus para um namoro sólido, santo e focado no futuro.</p>
-                    </div>
-                </div>
-                <div class="flex items-start space-x-4">
-                    <div class="bg-pink-500 text-white font-bold text-xl w-10 h-10 rounded-full flex items-center justify-center flex-shrink-0 shadow-lg shadow-pink-500/40 mt-1">3</div>
-                    <div class="bg-[#1E293B] p-5 rounded-xl flex-grow shadow-md">
-                        <h4 class="text-xl font-bold text-white mb-2 leading-snug">Compare as Qualidades do Cônjuge</h4>
-                        <p class="text-gray-300 leading-relaxed">Saiba quais as qualidades que ele precisa ter, e o mais importante: aquelas que ele NÃO pode ter, de acordo com a Palavra.</p>
-                    </div>
-                </div>
-                <div class="flex items-start space-x-4">
-                    <div class="bg-pink-500 text-white font-bold text-xl w-10 h-10 rounded-full flex items-center justify-center flex-shrink-0 shadow-lg shadow-pink-500/40 mt-1">4</div>
-                    <div class="bg-[#1E293B] p-5 rounded-xl flex-grow shadow-md">
-                        <h4 class="text-xl font-bold text-white mb-2 leading-snug">Busque Conselho de Líderes Espirituais</h4>
-                        <p class="text-gray-300 leading-relaxed">Como discernir e aplicar conselhos sábios, protegendo seu coração da precipitação e do engano.</p>
-                    </div>
-                </div>
-                <div class="flex items-start space-x-4">
-                    <div class="bg-pink-500 text-white font-bold text-xl w-10 h-10 rounded-full flex items-center justify-center flex-shrink-0 shadow-lg shadow-pink-500/40 mt-1">5</div>
-                    <div class="bg-[#1E293B] p-5 rounded-xl flex-grow shadow-md">
-                        <h4 class="text-xl font-bold text-white mb-2 leading-snug">Orientação Bíblica para o Papel de Cada Um</h4>
-                        <p class="text-gray-300 leading-relaxed">Entenda os papéis segundo Efésios 5:22–25 para construir um relacionamento equilibrado, honroso e harmonioso.</p>
-                    </div>
-                </div>
-                <div class="flex items-start space-x-4">
-                    <div class="bg-pink-500 text-white font-bold text-xl w-10 h-10 rounded-full flex items-center justify-center flex-shrink-0 shadow-lg shadow-pink-500/40 mt-1">6</div>
-                    <div class="bg-[#1E293B] p-5 rounded-xl flex-grow shadow-md">
-                        <h4 class="text-xl font-bold text-white mb-2 leading-snug">Cultive uma Comunicação Honesta</h4>
-                        <p class="text-gray-300 leading-relaxed">Aprenda a criar um diálogo profundo e transparente que constrói confiança, não apenas palavras vazias.</p>
-                    </div>
-                </div>
-                <div class="flex items-start space-x-4">
-                    <div class="bg-pink-500 text-white font-bold text-xl w-10 h-10 rounded-full flex items-center justify-center flex-shrink-0 shadow-lg shadow-pink-500/40 mt-1">7</div>
-                    <div class="bg-[#1E293B] p-5 rounded-xl flex-grow shadow-md">
-                        <h4 class="text-xl font-bold text-white mb-2 leading-snug">Mantenha a Pureza no Relacionamento</h4>
-                        <p class="text-gray-300 leading-relaxed">Obtenha clareza e força para uma vida pura que honra a Deus, protege o coração e prepara para o altar.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- 6. Componente ImpactPhrase (Frase de Impacto) -->
-        <section class="px-6 py-16 bg-[#4A2A5A] shadow-inner shadow-black/50">
-           <p id="marco-cta-inicio" class="text-2xl md:text-3xl text-white text-center font-bold italic leading-relaxed">
-    Relacionamentos que começam no coração de Deus são os únicos que verdadeiramente florescem na terra.
-</p>
-        </section>
-
-        <!-- 7. Componente Testimonials (Depoimentos) -->
-        <section class="px-6 py-16 bg-[#1A1E31]">
-            <h3 class="text-3xl font-extrabold text-pink-400 text-center mb-12 leading-snug">
-                O Que as Mulheres Estão Dizendo
-            </h3>
-            <div class="space-y-6">
-                <!-- Depoimento 1 -->
-                <div class="bg-slate-900 p-6 rounded-xl shadow-lg border-b-4 border-pink-400/50">
-                    <div class='flex items-center mb-3'>
-                        <!-- 5 Estrelas (SVG Star, preenchida com fill=yellow-400) -->
-                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor" stroke="none" class="w-5 h-5 fill-yellow-400 text-yellow-400"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
-                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor" stroke="none" class="w-5 h-5 fill-yellow-400 text-yellow-400"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
-                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor" stroke="none" class="w-5 h-5 fill-yellow-400 text-yellow-400"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
-                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor" stroke="none" class="w-5 h-5 fill-yellow-400 text-yellow-400"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
-                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor" stroke="none" class="w-5 h-5 fill-yellow-400 text-yellow-400"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
-                    </div>
-                    <p class="text-gray-200 leading-relaxed mb-4 italic">"Entendi finalmente o que Deus queria para mim. O guia abriu meus olhos de uma maneira muito profunda."</p>
-                    <p class="text-pink-300 font-semibold">— Ana Carolina</p>
-                </div>
-                <!-- Depoimento 2 -->
-                <div class="bg-slate-900 p-6 rounded-xl shadow-lg border-b-4 border-pink-400/50">
-                    <div class='flex items-center mb-3'>
-                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor" stroke="none" class="w-5 h-5 fill-yellow-400 text-yellow-400"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
-                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor" stroke="none" class="w-5 h-5 fill-yellow-400 text-yellow-400"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
-                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor" stroke="none" class="w-5 h-5 fill-yellow-400 text-yellow-400"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
-                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor" stroke="none" class="w-5 h-5 fill-yellow-400 text-yellow-400"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
-                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor" stroke="none" class="w-5 h-5 fill-yellow-400 text-yellow-400"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
-                    </div>
-                    <p class="text-gray-200 leading-relaxed mb-4 italic">"Eu e meu namorado amadurecemos demais com os exercícios práticos. Foi essencial para nos realinharmos em Cristo!"</p>
-                    <p class="text-pink-300 font-semibold">— Mariana Santos</p>
-                </div>
-                <!-- Depoimento 3 -->
-                <div class="bg-slate-900 p-6 rounded-xl shadow-lg border-b-4 border-pink-400/50">
-                    <div class='flex items-center mb-3'>
-                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor" stroke="none" class="w-5 h-5 fill-yellow-400 text-yellow-400"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
-                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor" stroke="none" class="w-5 h-5 fill-yellow-400 text-yellow-400"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
-                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor" stroke="none" class="w-5 h-5 fill-yellow-400 text-yellow-400"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
-                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor" stroke="none" class="w-5 h-5 fill-yellow-400 text-yellow-400"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
-                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor" stroke="none" class="w-5 h-5 fill-yellow-400 text-yellow-400"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
-                    </div>
-                    <p class="text-gray-200 leading-relaxed mb-4 italic">"Minha visão sobre o amor mudou completamente! O que mais me marcou foi como tudo é bíblico e ao mesmo tempo tão fácil de aplicar na vida real."</p>
-                    <p class="text-pink-300 font-semibold">— Juliana Costa</p>
-                </div>
-                <!-- Depoimento 4 -->
-                <div class="bg-slate-900 p-6 rounded-xl shadow-lg border-b-4 border-pink-400/50">
-                    <div class='flex items-center mb-3'>
-                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor" stroke="none" class="w-5 h-5 fill-yellow-400 text-yellow-400"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
-                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor" stroke="none" class="w-5 h-5 fill-yellow-400 text-yellow-400"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
-                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor" stroke="none" class="w-5 h-5 fill-yellow-400 text-yellow-400"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
-                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor" stroke="none" class="w-5 h-5 fill-yellow-400 text-yellow-400"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
-                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor" stroke="none" class="w-5 h-5 fill-yellow-400 text-yellow-400"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
-                    </div>
-                    <p class="text-gray-200 leading-relaxed mb-4 italic">"Chega de desilusões. Esse guia me deu a força e a direção que eu precisava para esperar em Deus e fazer as escolhas certas. Um verdadeiro divisor de águas."</p>
-                    <p class="text-pink-300 font-semibold">— Larissa Ribeiro</p>
-                </div>
-            </div>
-        </section>
-
-        <!-- 8. Componente SpecialOffer (Oferta Final) -->
-        <section id="offer-section" class="px-6 py-16">
-            <!-- Box da Oferta com Borda e Gradiente -->
-            <div class="bg-gradient-to-br from-[#4A2A5A] to-[#1E293B] p-8 rounded-3xl border-4 border-yellow-400 shadow-2xl shadow-[#4A2A5A]/70">
-                <div class="bg-yellow-400 rounded-lg p-2 mb-6">
-                    <p class="text-center text-lg font-black text-slate-900 animate-pulse">
-                        🚨 ÚLTIMAS VAGAS COM PREÇO PROMOCIONAL!
-                    </p>
-                </div>
-                
-                <h3 class="text-4xl font-extrabold text-white text-center mb-4 leading-snug">
-                    Seu Caminho Para o Propósito
-                </h3>
-                <div class="text-center mb-10">
-                    <p class="text-pink-300 text-xl font-bold line-through mb-1">De R$ 49,90</p>
-                    <p class="text-yellow-400 text-7xl font-black mb-2 leading-none">R$ 29,90</p>
-                    <p class="text-white text-lg font-semibold">Pagamento único e acesso vitalício.</p>
-                </div>
-                
-                <div class="mb-10">
-                    <h4 class="text-2xl font-bold text-white text-center mb-5">O que você vai receber:</h4>
-                    <div class="space-y-3">
-                        <!-- Itens da Oferta -->
-                        <div class="flex items-start space-x-3">
-                            <!-- Ícone: CheckCircle -->
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-6 h-6 text-yellow-400 flex-shrink-0 mt-1"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><path d="m9 11 3 3L22 4"/></svg>
-                            <p class="text-white text-lg">Acesso Imediato e Completo ao Guia Digital.</p>
-                        </div>
-                        <div class="flex items-start space-x-3">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-6 h-6 text-yellow-400 flex-shrink-0 mt-1"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><path d="m9 11 3 3L22 4"/></svg>
-                            <p class="text-white text-lg">PDF para download e impressão ilimitados.</p>
-                        </div>
-                        <div class="flex items-start space-x-3">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-6 h-6 text-yellow-400 flex-shrink-0 mt-1"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><path d="m9 11 3 3L22 4"/></svg>
-                            <p class="text-white text-lg">Todos os Exercícios Práticos Inclusos.</p>
-                        </div>
-                        <div class="flex items-start space-x-3">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-6 h-6 text-yellow-400 flex-shrink-0 mt-1"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><path d="m9 11 3 3L22 4"/></svg>
-                            <p class="text-white text-lg">Conteúdo 100% Fundamentado na Bíblia.</p>
-                        </div>
-                        <div class="flex items-start space-x-3">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-6 h-6 text-yellow-400 flex-shrink-0 mt-1"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><path d="m9 11 3 3L22 4"/></svg>
-                            <p class="text-white text-lg">Garantia Incondicional de 7 dias.</p>
-                        </div>
-                        <div class="flex items-start space-x-3">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-6 h-6 text-yellow-400 flex-shrink-0 mt-1"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><path d="m9 11 3 3L22 4"/></svg>
-                            <p class="text-white text-lg">Suporte exclusivo por e-mail (Bônus de Lançamento).</p>
-                        </div>
-                    </div>
-                </div>
-                
-              <a href="https://doceuaocoracao.systeme.io/ac52ed70" class="w-full bg-[#F472B6] hover:bg-pink-600 text-white font-extrabold text-xl py-5 px-8 rounded-full shadow-2xl shadow-[#F472B6]/60 transition-all duration-300 transform hover:scale-[1.03] flex items-center justify-center space-x-2 animate-pulse">
-    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-6 h-6"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
-    <span>Quero Garantir Minha Vaga (R$ 29,90)</span>
-</a>
-        </section>
-
-        <!-- 9. Componente Guarantee (Garantia) -->
-        <section class="px-6 py-16 bg-slate-900">
-            <div class="bg-[#1E293B] p-8 rounded-2xl border-4 border-pink-400">
-                <div class="flex justify-center mb-6">
-                    <!-- Ícone: Shield -->
-                    <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-16 h-16 text-pink-400 drop-shadow-lg"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
-                </div>
-                <h3 class="text-3xl font-bold text-white text-center mb-4">
-                    Risco Zero: 7 Dias de Garantia
-                </h3>
-                <p class="text-gray-300 text-lg text-center leading-relaxed">
-                    Sua satisfação e sua fé são nossa prioridade. Se, em 7 dias, você não sentir que o guia irá trazer transformação emocional e espiritual, devolvemos seu investimento integralmente.
-                </p>
-            </div>
-        </section>
-
-        <!-- 10. Componente Footer (Rodapé) -->
-        <footer class="px-6 py-12 text-center bg-[#1A1E31] border-t border-gray-800">
-            <p class="text-xl text-pink-300 italic leading-relaxed mb-6">
-                "Escolher com sabedoria é caminhar alinhado ao propósito de Deus."
-            </p>
-            <div class='text-sm text-gray-400 space-y-1'>
-                <p>© 2024 Do Céu ao Coração. Todos os direitos reservados.</p>
-                <div class='flex justify-center space-x-4'>
-                    <a href="#" class='hover:text-pink-300 underline'>Política de Privacidade</a>
-                    <span class='text-gray-600'>|</span>
-                    <a href="#" class='hover:text-pink-300 underline'>Termos de Uso</a>
-                </div>
-            </div>
-        </footer>
-
+    <div style="background: #f9f9f9; padding: 20px; border: 1px solid #ddd; margin-top: 30px;">
+        <p class="promo">🚨 ÚLTIMAS VAGAS COM PREÇO PROMOCIONAL!</p>
+        <h3>Seu Caminho Para o Propósito</h3>
+        <p><strike>De R$ 49,90</strike> por <strong>R$ 29,90</strong></p>
+        <p>Pagamento único e acesso vitalício.</p>
+        <a href="https://pay.cakto.com.br/uhf8ue2_782055" class="btn" style="background: #e67e22;">Quero Garantir Minha Vaga (R$ 29,90)</a>
+        <p><small>🔒 Risco Zero: 7 Dias de Garantia</small></p>
     </div>
 
-    <!-- CTA Fixo (Sticky) para Mobile - Visível apenas após rolar a tela -->
-    
-    <div id="sticky-cta-nova" style="
-    display: none; 
-    position: fixed; 
-    bottom: 0; 
-    left: 0; 
-    width: 100%; 
-    z-index: 9999;
-    box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.2); 
-">
-    <a href="https://doceuaocoracao.systeme.io/ac52ed70" class="w-full bg-[#F472B6] hover:bg-pink-600 text-white font-extrabold text-xl py-5 px-8 rounded-full shadow-2xl shadow-[#F472B6]/60 transition-all duration-300 transform hover:scale-[1.03] flex items-center justify-center space-x-2 animate-pulse">
-    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-6 h-6"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
-    <span>Quero a Oferta de R$ 29,90 AGORA!</span>
-</a>
+    <footer>
+        <p>© 2024 Do Céu ao Coração. Todos os direitos reservados.</p>
+        <p>Política de Privacidade | Termos de Uso</p>
+    </footer>
 </div>
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-<script>
-$(document).ready(function(){
-    var marcoElemento = $('#marco-cta-inicio');
-    var botaoSticky = $('#sticky-cta-nova');
+<div class="floating-bar">
+    <a href="https://pay.cakto.com.br/uhf8ue2_782055" class="btn" style="margin: 0; width: 90%;">Quero a Oferta de R$ 29,90 AGORA!</a>
+</div>
 
-    $(window).scroll(function() {
-        if (marcoElemento.length) {
-            var posicaoMarco = marcoElemento.offset().top - 150; 
-            var scrollAtual = $(window).scrollTop() + $(window).height();
-
-            if (scrollAtual > posicaoMarco) {
-                botaoSticky.fadeIn(300);
-            } else {
-                botaoSticky.fadeOut(300);
-            }
-        }
-    });
-});
-</script>
 </body>
-
-</html>  
-
+</html>
